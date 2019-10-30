@@ -46,6 +46,7 @@ this.$dialog({
 | confirmFn | function after confirm(type=alert/confirm) | Function | - |
 | cancelFn | function after cancel(type=confirm) | Function | - |
 | beforeClose | function in the end(all types) | Function | - |
+
 ps：1、If position's type is String,the value in top、center、bottom.Or Number(n),and n>=0,the dialog is n+'px' from the top,n<0,it is -n+'px' from the bottom.
 
 #### You can change the plugin's style by rewrite css
