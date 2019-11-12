@@ -20,13 +20,13 @@ Vue.prototype.$dialog = Dialog;
 
 * xxx.vue
 ``` javascript 
-this.$dialog('Hello Word'); // When the value is String, the dialog default type is toast
+this.$dialog('Hello World'); // When the value is String, the dialog default type is toast
 ```
 or
 ``` javascript 
 this.$dialog({
 	type: 'toast',
-	message: 'Hello Word'
+	message: 'Hello World'
 });
 ```
 #### 配置参数
