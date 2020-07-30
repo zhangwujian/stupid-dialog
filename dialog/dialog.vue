@@ -1,7 +1,7 @@
 <template>
     <transition name="dialog-fade" @after-leave="handleAfterLeave">
-        <div v-show="visible" ref="dialog" :class="'dialog-content ' + (mask ? 'dialog-content-mask ' : ' ')" :key="'dialog'" :data-state="closeOnMask" @click="closeMask">
-            <div v-if="type === 'alert' || type === 'confirm'" :class="'dialog-container dialog-confirm ' + dialogClass">
+        <div v-show="visible" ref="dialog" :class="['dialog-content', {'dialog-content-mask' : mask}, {'dialog-content-dark': dark}]" :key="'dialog'" :data-state="closeOnMask" @click="closeMask">
+            <div v-if="type === 'alert' || type === 'confirm'" :class="['dialog-container', 'dialog-confirm', dialogClass]">
                 <div v-if="title" class="dialog-title">{{title}}</div>
                 <div class="dialog-message">{{message}}</div>
                 <div class="dialog-action">
@@ -9,7 +9,7 @@
                     <div class="action-confirm" @click="onConfirm">{{confirmText}}</div>
                 </div>
             </div>
-            <div v-else :class="'dialog-container dialog-toast ' + dialogClass">
+            <div v-else :class="['dialog-container', 'dialog-toast', dialogClass]">
                 <div class="dialog-message">{{message}}</div>
             </div>
         </div>
@@ -26,9 +26,10 @@ export default {
             title: '',
             message: '',
             position: 'center',
-            duration: 1500,
+            duration: 2200,
             type: 'toast',
             mask: true,
+            dark: false,
             closeOnMask: true,
             preventScroll: true,
             dialogClass: '',
@@ -119,6 +120,3 @@ export default {
     }
 };
 </script>
-<style>
-
-</style>

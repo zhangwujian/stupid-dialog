@@ -14,41 +14,40 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 80px 0;
-
+    padding: 20vw 0;
 }
 .dialog-content-mask {
     background: rgba(0, 0, 0, 0.5);
 }
-
 .dialog-container {
     z-index: 9999;
     box-sizing: border-box;
-    border-radius: 4px;
+    border-radius: 1.8vw;
     text-align: center;
-    background: #ffffff;
-    color: #000000;
+    background: #fff;
+    color: #000;
+    font-size: 3.8vm;
 }
-
 .dialog-title {
-    padding: 8px 6%;
-    border-bottom: 1px solid #000;
-    text-align: left;
+    padding: 2.8vw 2.8vw 0 2.8vw;
+    font-size: 4vw;
+    color: #000;
+    text-align: center;
+    letter-spacing: 1.8px;
 }
 .dialog-confirm {
-    max-width: 60%;
-    min-width: 40%;
+    max-width: 72vw;
+    min-width: 60vw;
 }
 .dialog-confirm .dialog-message {
-    /* padding: 12px; */
-    padding: 6%;
+    padding: 5vw;
 }
-.dialog-toast  {
-    max-width: 50%;
-    min-width: 30%;
+.dialog-toast {
+    max-width: 56vw;
+    min-width: 24vw;
 }
 .dialog-toast .dialog-message {
-    padding: 8px 12px;
+    padding: 2.8vw 4vw;
 }
 .dialog-message {
     display: inline-block;
@@ -59,18 +58,29 @@
     display: flex;
     justify-content: space-around;
     text-align: center;
-    border-top: 1px solid #000000;
+    border-top: 1px solid #000;
+    letter-spacing: 1.2px;
 }
 .dialog-action .action-confirm {
-    padding: 8px 0;
+    padding: 2.8vw 0;
     width: 50%;
+    font-weight: bolder;
+    color: #000;
 }
 .dialog-action .action-cancel {
-    padding: 8px 0;
-    width: 50%;
-    border-right: 1px solid #000000;
+    padding: 2.8vw 0;
+    width: calc(50% - 1px);
+    font-weight: bolder;
+    color: #ADADAD;
+    border-right: 1px solid #000;
 }
-.action-border {
-    width: 1px;
-    background: #000000;
+.dialog-content-dark .dialog-container {
+    background: #141314;
+    color: #ADADAD;
+}
+.dialog-content-dark .dialog-title {
+    color: #fff;
+}
+.dialog-content-dark .dialog-action .action-confirm {
+    color: #fff;
 }
