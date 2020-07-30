@@ -39,6 +39,7 @@ this.$dialog({
 | position | 弹窗位置 | String/Number | 'center' |
 | duration | toast持续时间 | Number | 1500 |
 | mask | 是否有背景蒙板 | Boolean | true |
+| dark | 暗黑配色 | Boolean | false |
 | closeOnMask | 是否可点击蒙板关闭弹窗(type=alert/confirm) | Boolean | true |
 | preventScroll | 弹窗出现时是否阻止背景滑动 | Boolean | true |
 | dialogClass | 自定义class | String | - |

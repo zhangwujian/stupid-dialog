@@ -38,6 +38,7 @@ this.$dialog({
 | position | position | String/Number | 'center' |
 | duration | toast's duration | Number | 1500 |
 | mask | need mask | Boolean | true |
+| dark | dark style | Boolean | false |
 | closeOnMask | can close by mask(type=alert/confirm) | Boolean | true |
 | preventScroll | prevent touchmove | Boolean | true |
 | dialogClass | dialog‘s class name | String | - |
