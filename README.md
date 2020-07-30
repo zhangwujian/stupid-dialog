@@ -4,7 +4,7 @@
 
 > 组件:  stupid-dialog
 
-> 版本: 1.1.4
+> 版本: 1.1.5
 
 [English document](./EnglishREADME.md)
 ## 使用方法

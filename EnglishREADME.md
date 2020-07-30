@@ -4,7 +4,7 @@
 
 > Plugin name:  stupid-dialog
 
-> version: 1.1.4
+> version: 1.1.5
 
 ## How to use
 * NPM install the stupid-dialog plugin
